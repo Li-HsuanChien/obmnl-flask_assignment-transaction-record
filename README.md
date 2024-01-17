@@ -81,3 +81,8 @@ This is a simple web app built with Flask that allows users to manage transactio
 ## Contributing
 
 Feel free to contribute to the development of this web app by creating issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
