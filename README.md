@@ -22,6 +22,7 @@ This is a simple web app built with Flask that allows users to manage transactio
 ### Prerequisites
 
 - [Python](https://www.python.org/) installed
+- [Pip](https://pip.pypa.io/en/stable/) installed on your machine.
 
 ### Running the App
 
