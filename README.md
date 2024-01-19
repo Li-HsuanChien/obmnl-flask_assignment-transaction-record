@@ -1,6 +1,14 @@
 <a name="readme-top"></a>
 # Simple Web App: Transaction Tracker
 
+### Built With
+
+* [![Flask][Flask]][Flask-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Overview
 
 This is a simple web app built with Flask that allows users to manage transactions. The app has an index page displaying existing transactions, an "Add Transaction" button to add new transactions, and options to edit or delete transactions. Also supports searching transactions with minimum and maximum value.
@@ -134,3 +142,11 @@ Feel free to contribute to the development of this web app by creating issues or
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+ 
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Flask]: https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://flask.palletsprojects.com/en/3.0.x/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
