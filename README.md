@@ -29,7 +29,7 @@ This is a simple web app built with Flask that allows users to manage transactio
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/Li-HsuanChien/obmnl-flask_assignment-transaction-record.git
+    git clone https://github.com/Li-HsuanChien/transaction_tracker.git
     ```
 
 2. Navigate to the project directory:
@@ -75,7 +75,7 @@ This is a simple web app built with Flask that allows users to manage transactio
 ## Usage
 
 - Visit the index page to view existing transactions.
-- Click the "Add Transaction" button to add new transactions with date and amount input.
+- Click the "Add Transaction" button to add new transactions with date, name and amount input.
 - Edit or delete transactions using the corresponding buttons on the index page.
 
 ## Contributing
