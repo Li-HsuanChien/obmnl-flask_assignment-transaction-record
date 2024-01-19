@@ -1,8 +1,11 @@
+<a name="readme-top"></a>
 # Simple Web App: Transaction Tracker
 
 ## Overview
 
 This is a simple web app built with Flask that allows users to manage transactions. The app has an index page displaying existing transactions, an "Add Transaction" button to add new transactions, and options to edit or delete transactions. Also supports searching transactions with minimum and maximum value.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
 
@@ -17,6 +20,8 @@ This is a simple web app built with Flask that allows users to manage transactio
 - **Edit and Delete:**
   - On the index page, each transaction entry has buttons to edit or delete that specific transaction.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Getting Started
 
 ### Prerequisites
@@ -24,7 +29,11 @@ This is a simple web app built with Flask that allows users to manage transactio
 - [Python](https://www.python.org/) installed
 - [Pip](https://pip.pypa.io/en/stable/) installed on your machine.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Running the App
+
+**Manual commands**
 
 1. Clone this repository to your local machine:
 
@@ -72,12 +81,40 @@ This is a simple web app built with Flask that allows users to manage transactio
 
 7. Open your web browser and go to 'http://127.0.0.1:5000/' to access the app.
 
+**Using Docker Containers**
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone https://github.com/Li-HsuanChien/transaction_tracker.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd transaction_tracker
+    ```
+3. Build Docker image:
+
+    ```bash
+        docker build -t <insert-your-own-image-name> .
+    ```
+
+3. Run containers wth image:
+
+    ```bash
+        docker run -p 5000:5000 <insert-your-own-image-name>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Usage
 
 - Visit the index page to view existing transactions.
 - Click the "Add Transaction" button to add new transactions with date, name and amount input.
 - Edit or delete transactions using the corresponding buttons on the index page.
-- Click the "Search Transaction" button and input min and max value to search for transaction with targeted amount 
+- Click the "Search Transaction" button and input min and max value to search for transaction with targeted amount
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Awaiting Updates
 
@@ -85,9 +122,13 @@ This is a simple web app built with Flask that allows users to manage transactio
 -Allow media attachments(urls, photos)
 -Host website
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Contributing
 
 Feel free to contribute to the development of this web app by creating issues or pull requests.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
