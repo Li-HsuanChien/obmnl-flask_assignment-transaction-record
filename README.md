@@ -79,6 +79,12 @@ This is a simple web app built with Flask that allows users to manage transactio
 - Edit or delete transactions using the corresponding buttons on the index page.
 - Click the "Search Transaction" button and input min and max value to search for transaction with targeted amount 
 
+## Awaiting Updates
+
+-Allow setting budget
+-Allow media attachments(urls, photos)
+-Host website
+
 ## Contributing
 
 Feel free to contribute to the development of this web app by creating issues or pull requests.
