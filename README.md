@@ -1,4 +1,12 @@
 <a name="readme-top"></a>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # Simple Web App: Transaction Tracker
 
 ### Built With
@@ -126,9 +134,9 @@ This is a simple web app built with Flask that allows users to manage transactio
 
 ## Awaiting Updates
 
--Allow setting budget
--Allow media attachments(urls, photos)
--Host website
+- Allow setting budget
+- Allow media attachments(urls, photos)
+- Host website
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,3 +158,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [Flask-url]: https://flask.palletsprojects.com/en/3.0.x/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
+
+[contributors-shield]: https://img.shields.io/github/contributors/Li-HsuanChien/transaction_tracker?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Li-HsuanChien/transaction_tracker?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/Li-HsuanChien/transaction_tracker?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Li-HsuanChien/transaction_tracker?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/Li-HsuanChien/transaction_tracker?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
