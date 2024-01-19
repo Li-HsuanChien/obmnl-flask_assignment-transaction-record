@@ -44,10 +44,12 @@
     <div class="container">
         <h1 class="text-center">Transaction Records</h1>
 
+
         <table class="table transaction-table">
             <thead>
                 <tr>
                     <th>Date</th>
+                    <th>Name</th>
                     <th>Amount</th>
                     <th>Actions</th>
                 </tr>
@@ -56,6 +58,7 @@
                 {% for transaction in transactions %}
                 <tr>
                     <td>{{ transaction.date }}</td>
+                    <td>{{ transaction.name }}</td>
                     <td>{{ transaction.amount }}</td>
                     <td class="transaction-actions">
                         <a class="btn btn-sm btn-primary" href="{{ url_for('edit_transaction', transaction_id=transaction.id) }}">Edit</a>
@@ -72,7 +75,13 @@
 
         <div class="d-flex justify-content-center">
             <a class="btn btn-success" href="{{ url_for('add_transaction') }}">Add Transaction</a>
+            {%if searchstate%}
+                <a class="btn btn-danger" href="{{ url_for('get_transactions') }}">Back</a>
+            {% else %}
+                <a class="btn btn-info" href="{{ url_for('search_transactions') }}">Search Transaction</a>
+            {% endif %}
         </div>
+        
         
     </div>
 </body>

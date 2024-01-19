@@ -5,17 +5,23 @@ from flask import Flask, redirect, request, render_template, url_for
 
 app = Flask(__name__)
 
+searchstate = False
+
 # Sample data
 transactions = [
-    {'id': 1, 'date': '2023-06-01', 'amount': 100},
-    {'id': 2, 'date': '2023-06-02', 'amount': -200},
-    {'id': 3, 'date': '2023-06-03', 'amount': 300}
+    {'id': 1, 'date': '2023-06-01', 'name': 'Salary', 'amount': 100},
+    {'id': 2, 'date': '2023-06-02', 'name': 'Toys', 'amount': -200},
+    {'id': 3, 'date': '2023-06-03', 'name': 'Found on ground', 'amount': 300}
     ]
 
 # Read operation: List all transactions
 @app.route("/")
 def get_transactions():
-    return render_template("transactions.html", transactions=transactions)
+    searchstate = False
+    total_balance = 0
+    for data in transactions:
+        total_balance += data["amount"]
+    return render_template("transactions.html", transactions=transactions, total=total_balance, searchstate=searchstate)
 
 # Create operation: Display add transaction form
 @app.route("/add", methods=["GET", "POST"])
@@ -25,6 +31,7 @@ def add_transaction():
         transaction = {
             'id': len(transactions) + 1,
             'date': request.form['date'],
+            'name': request.form['name'],
             'amount': float(request.form['amount'])
         }
     
@@ -44,6 +51,7 @@ def edit_transaction(transaction_id):
     if request.method == 'POST':
         # Extract the updated values from the form fields
         date = request.form['date']
+        date = request.form['name']
         amount = float(request.form['amount'])
 
         # Find the transaction with the matching ID and update its values
@@ -75,6 +83,7 @@ def delete_transaction(transaction_id):
 
 @app.route("/search", methods=["GET", "POST"])
 def search_transactions():
+    searchstate = True
     if request.method == "POST":
         filtered_transactions = []
         minimum = float(request.form["min_amount"])
@@ -82,15 +91,9 @@ def search_transactions():
         for transaction in transactions:
             if transaction["amount"] <= maximum and transaction["amount"] >= minimum:
                 filtered_transactions.append(transaction)
-        return render_template("transactions.html", transactions=filtered_transactions)
+        return render_template("transactions.html", transactions=filtered_transactions, searchstate=searchstate)
     return(render_template("search.html"))
 
-@app.route("/balance")
-def check_balance():
-    total_balance = 0
-    for transaction in transactions:
-        total_balance += transaction["amount"]
-    return render_template("transactions.html", transactions=transactions, total=total_balance)
 
 # Run the Flask app
 if __name__ == "__main__":

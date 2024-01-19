@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple web app built with Flask that allows users to manage transactions. The app has an index page displaying existing transactions, an "Add Transaction" button to add new transactions, and options to edit or delete transactions.
+This is a simple web app built with Flask that allows users to manage transactions. The app has an index page displaying existing transactions, an "Add Transaction" button to add new transactions, and options to edit or delete transactions. Also supports searching transactions with minimum and maximum value.
 
 ## Features
 
@@ -77,6 +77,7 @@ This is a simple web app built with Flask that allows users to manage transactio
 - Visit the index page to view existing transactions.
 - Click the "Add Transaction" button to add new transactions with date, name and amount input.
 - Edit or delete transactions using the corresponding buttons on the index page.
+- Click the "Search Transaction" button and input min and max value to search for transaction with targeted amount 
 
 ## Contributing
 
