@@ -3,6 +3,22 @@
 
 ## Overview
 
+[![Product Name Screen Shot One][product-screenshot-one]](https://github.com/Li-HsuanChien/transaction_tracker)
+
+<hr>
+
+[![Product Name Screen Shot Two][product-screenshot-two]](https://github.com/Li-HsuanChien/transaction_tracker)
+
+<hr>
+
+[![Product Name Screen Shot Three][product-screenshot-three]](https://github.com/Li-HsuanChien/transaction_tracker)
+
+<hr>
+
+[![Product Name Screen Shot Four][product-screenshot-four]](https://github.com/Li-HsuanChien/transaction_tracker)
+
+<hr>
+
 This is a simple web app built with Flask that allows users to manage transactions. The app has an index page displaying existing transactions, an "Add Transaction" button to add new transactions, and options to edit or delete transactions. Also supports searching transactions with minimum and maximum value.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -83,27 +99,34 @@ This is a simple web app built with Flask that allows users to manage transactio
 
 **Using Docker Containers**
 
-1. Clone this repository to your local machine:
+**Manual commands**
+
+1. Login to Docker Hub:
+
+    - Open a terminal or command prompt and run the following command to log in to Docker Hub:
 
     ```bash
-    git clone https://github.com/Li-HsuanChien/transaction_tracker.git
+    docker login
+    ```
+    - Enter your Docker Hub username and password when prompted.
+
+2. Pull the Online Course App Image:
+
+    - Run the following command to pull the Online Course App Docker image from Docker Hub:
+
+    ```bash
+    docker pull shanechien/transaction_tracker
     ```
 
-2. Navigate to the project directory:
+3. Run the Container:
+
+    - Once the image is successfully pulled, you can run a container using the following command:
 
     ```bash
-    cd transaction_tracker
-    ```
-3. Build Docker image:
-
-    ```bash
-        docker build -t <insert-your-own-image-name> .
+        docker run -p 5000:5000 shanechien/transaction_tracker
     ```
 
-3. Run containers wth image:
-
-    ```bash
-        docker run -p 5000:5000 <insert-your-own-image-name>
+4. The application will be listening to `http://localhost:5000/` by default.    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
